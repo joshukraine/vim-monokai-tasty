@@ -90,4 +90,3 @@ let s:palette.normal.error = [ [ '#d0d0d0', '#ff0000', 252, 196 ] ]
 let s:palette.normal.warning = [ [ '#262626', '#ffff00', 235, 226 ] ]
 
 let g:lightline#colorscheme#monokai_tasty#palette = s:palette
-
