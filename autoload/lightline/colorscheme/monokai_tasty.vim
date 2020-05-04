@@ -14,7 +14,7 @@ let s:orange = { "cterm": 208, "gui": "#FF9700" }
 let s:light_grey = { "cterm": 250, "gui": "#bcbcbc" }
 let s:grey = { "cterm": 245, "gui": "#8a8a8a" }
 let s:dark_grey = { "cterm": 59, "gui": "#5f5f5f" }
-let s:darkest_grey = { "cterm": 238, "gui": "#444444" }
+let s:darker_grey = { "cterm": 238, "gui": "#444444" }
 let s:light_charcoal = { "cterm": 236, "gui": "#303030" }
 let s:charcoal = { "cterm": 235, "gui": "#262626" }
 
@@ -52,31 +52,31 @@ let s:palette.replace.right = [
 
 " left
 let s:palette.normal.left = [
-      \ s:add(s:yellow, s:darkest_grey, 'bold'),
+      \ s:add(s:yellow, s:darker_grey, 'bold'),
       \ s:add(s:charcoal, s:yellow, 'none') ]
 let s:palette.command.left =  [
-      \ s:add(s:light_blue, s:darkest_grey, 'bold'),
+      \ s:add(s:light_blue, s:darker_grey, 'bold'),
       \ s:add(s:charcoal, s:light_blue, 'none') ]
 let s:palette.replace.left = [
-      \ s:add(s:magenta, s:darkest_grey, 'bold'),
+      \ s:add(s:magenta, s:darker_grey, 'bold'),
       \ s:add(s:charcoal, s:magenta, 'none') ]
 let s:palette.insert.left = [
-      \ s:add(s:light_green, s:darkest_grey, 'bold'),
+      \ s:add(s:light_green, s:darker_grey, 'bold'),
       \ s:add(s:charcoal, s:light_green, 'none') ]
 let s:palette.visual.left = [
-      \ s:add(s:purple, s:darkest_grey, 'bold'),
+      \ s:add(s:purple, s:darker_grey, 'bold'),
       \ s:add(s:charcoal, s:purple, 'none') ]
 let s:palette.inactive.left = s:palette.inactive.right[1:]
 
 " middle
 let s:palette.normal.middle = [
-      \ s:add(s:yellow, s:darkest_grey, 'none') ]
+      \ s:add(s:yellow, s:darker_grey, 'none') ]
 let s:palette.insert.middle = [
-      \ s:add(s:light_blue, s:darkest_grey, 'none') ]
+      \ s:add(s:light_blue, s:darker_grey, 'none') ]
 let s:palette.replace.middle = [
-      \ s:add(s:magenta, s:darkest_grey, 'none') ]
+      \ s:add(s:magenta, s:darker_grey, 'none') ]
 let s:palette.visual.middle = [
-      \ s:add(s:purple, s:darkest_grey, 'none') ]
+      \ s:add(s:purple, s:darker_grey, 'none') ]
 let s:palette.inactive.middle = [
       \s:add(s:dark_grey, s:light_charcoal, 'none') ]
 
