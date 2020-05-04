@@ -75,10 +75,10 @@ call Highlight("SpellLocal", s:charcoal, s:orange, s:italic)
 
 call Highlight("CursorLineNR", s:yellow, s:none, s:none)
 
-call Highlight("CursorColumn", s:none, s:darker_grey, s:none)
+call Highlight("CursorColumn", s:none, s:light_charcoal, s:none)
 call Highlight("ColorColumn", s:none, s:light_charcoal, s:none)
 call Highlight("Conceal", s:none, s:none, s:none)
-call Highlight("CursorLine", s:none, s:darker_grey, s:none)
+call Highlight("CursorLine", s:none, s:light_charcoal, s:none)
 call Highlight("Type", s:none, s:none, s:none)
 
 call Highlight("Visual", s:none, s:dark_grey, s:none)
