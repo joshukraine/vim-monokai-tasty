@@ -14,7 +14,7 @@ let s:orange = { "cterm": 208, "gui": "#FF9700" }
 let s:light_grey = { "cterm": 250, "gui": "#bcbcbc" }
 let s:grey = { "cterm": 245, "gui": "#8a8a8a" }
 let s:dark_grey = { "cterm": 59, "gui": "#5f5f5f" }
-let s:darkest_grey = { "cterm": 238, "gui": "#444444" }
+let s:darker_grey = { "cterm": 238, "gui": "#444444" }
 let s:light_charcoal = { "cterm": 236, "gui": "#303030" }
 let s:charcoal = { "cterm": 235, "gui": "#262626" }
 
@@ -26,63 +26,63 @@ let s:palette = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'vis
 
 " right
 let s:palette.normal.right = [
-      \ s:add(s:charcoal, s:yellow, 'none'),
+      \ s:add(s:charcoal, s:light_blue, 'none'),
       \ s:add(s:charcoal, s:grey, 'none'),
-      \ s:add(s:light_grey, s:dark_grey, 'none') ]
+      \ s:add(s:light_grey, s:darker_grey, 'none') ]
 let s:palette.inactive.right = [
       \ s:add(s:charcoal, s:grey, 'none'),
       \ s:add(s:charcoal, s:dark_grey, 'none'),
-      \ s:add(s:light_grey, s:dark_grey, 'none') ]
+      \ s:add(s:light_grey, s:darker_grey, 'none') ]
 let s:palette.command.right = [
-      \ s:add(s:charcoal, s:light_blue, 'none'),
+      \ s:add(s:charcoal, s:yellow, 'none'),
       \ s:add(s:charcoal, s:grey, 'none'),
-      \ s:add(s:light_grey, s:dark_grey, 'none') ]
+      \ s:add(s:light_grey, s:darker_grey, 'none') ]
 let s:palette.insert.right = [
       \ s:add(s:charcoal, s:light_green, 'none'),
       \ s:add(s:charcoal, s:grey, 'none'),
-      \ s:add(s:light_grey, s:dark_grey, 'none') ]
+      \ s:add(s:light_grey, s:darker_grey, 'none') ]
 let s:palette.visual.right = [
       \ s:add(s:charcoal, s:purple, 'none'),
       \ s:add(s:charcoal, s:grey, 'none'),
-      \ s:add(s:light_grey, s:dark_grey, 'none') ]
+      \ s:add(s:light_grey, s:darker_grey, 'none') ]
 let s:palette.replace.right = [
       \ s:add(s:charcoal, s:magenta, 'none'),
       \ s:add(s:charcoal, s:grey, 'none'),
-      \ s:add(s:light_grey, s:dark_grey, 'none') ]
+      \ s:add(s:light_grey, s:darker_grey, 'none') ]
 
 " left
 let s:palette.normal.left = [
-      \ s:add(s:yellow, s:darkest_grey, 'bold'),
-      \ s:add(s:charcoal, s:yellow, 'none') ]
-let s:palette.command.left =  [
-      \ s:add(s:light_blue, s:darkest_grey, 'bold'),
+      \ s:add(s:light_blue, s:darker_grey, 'bold'),
       \ s:add(s:charcoal, s:light_blue, 'none') ]
+let s:palette.command.left =  [
+      \ s:add(s:yellow, s:darker_grey, 'bold'),
+      \ s:add(s:charcoal, s:yellow, 'none') ]
 let s:palette.replace.left = [
-      \ s:add(s:magenta, s:darkest_grey, 'bold'),
+      \ s:add(s:magenta, s:darker_grey, 'bold'),
       \ s:add(s:charcoal, s:magenta, 'none') ]
 let s:palette.insert.left = [
-      \ s:add(s:light_green, s:darkest_grey, 'bold'),
+      \ s:add(s:light_green, s:darker_grey, 'bold'),
       \ s:add(s:charcoal, s:light_green, 'none') ]
 let s:palette.visual.left = [
-      \ s:add(s:purple, s:darkest_grey, 'bold'),
+      \ s:add(s:purple, s:darker_grey, 'bold'),
       \ s:add(s:charcoal, s:purple, 'none') ]
 let s:palette.inactive.left = s:palette.inactive.right[1:]
 
 " middle
 let s:palette.normal.middle = [
-      \ s:add(s:yellow, s:darkest_grey, 'none') ]
+      \ s:add(s:light_blue, s:darker_grey, 'none') ]
 let s:palette.insert.middle = [
-      \ s:add(s:light_blue, s:darkest_grey, 'none') ]
+      \ s:add(s:yellow, s:darker_grey, 'none') ]
 let s:palette.replace.middle = [
-      \ s:add(s:magenta, s:darkest_grey, 'none') ]
+      \ s:add(s:magenta, s:darker_grey, 'none') ]
 let s:palette.visual.middle = [
-      \ s:add(s:purple, s:darkest_grey, 'none') ]
+      \ s:add(s:purple, s:darker_grey, 'none') ]
 let s:palette.inactive.middle = [
       \s:add(s:dark_grey, s:light_charcoal, 'none') ]
 
 " tabs
 let s:palette.tabline.left = [ [ '#d0d0d0', '#666666', 252, 242 ] ]
-let s:palette.tabline.tabsel = [ [ '#dadada', '#121212', 253, 233 ] ]
+let s:palette.tabline.tabsel = [ [ '#303030', '#bcbcbc', 238, 250 ] ]
 let s:palette.tabline.middle = [ [ '#8a8a8a', '#3a3a3a', 245, 237 ] ]
 let s:palette.tabline.right = [ [ '#d0d0d0', '#666666', 252, 242 ] ]
 
@@ -90,4 +90,3 @@ let s:palette.normal.error = [ [ '#d0d0d0', '#ff0000', 252, 196 ] ]
 let s:palette.normal.warning = [ [ '#262626', '#ffff00', 235, 226 ] ]
 
 let g:lightline#colorscheme#monokai_tasty#palette = s:palette
-

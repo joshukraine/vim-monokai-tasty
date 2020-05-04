@@ -2,6 +2,7 @@
 "
 " Author: Patrick Stockwell <mail@deciphr.net>
 
+hi clear
 if exists("syntax_on")
   syntax reset
 endif
@@ -32,7 +33,7 @@ let s:light_grey = { "cterm": 250, "gui": "#bcbcbc" }
 let s:grey = { "cterm": 245, "gui": "#8a8a8a" }
 let s:dark_grey = { "cterm": 59, "gui": "#5f5f5f" }
 let s:darker_grey = { "cterm": 238, "gui": "#444444" }
-let s:light_charcoal = { "cterm": 238, "gui": "#2b2b2b" }
+let s:light_charcoal = { "cterm": 238, "gui": "#303030" }
 let s:charcoal = { "cterm": 235, "gui": "#262626" }
 
 let s:danger = { "cterm": 197, "gui": "#ff005f" }
@@ -74,10 +75,10 @@ call Highlight("SpellLocal", s:charcoal, s:orange, s:italic)
 
 call Highlight("CursorLineNR", s:yellow, s:none, s:none)
 
-call Highlight("CursorColumn", s:none, s:darker_grey, s:none)
+call Highlight("CursorColumn", s:none, s:light_charcoal, s:none)
 call Highlight("ColorColumn", s:none, s:light_charcoal, s:none)
 call Highlight("Conceal", s:none, s:none, s:none)
-call Highlight("CursorLine", s:none, s:darker_grey, s:none)
+call Highlight("CursorLine", s:none, s:light_charcoal, s:none)
 call Highlight("Type", s:none, s:none, s:none)
 
 call Highlight("Visual", s:none, s:dark_grey, s:none)
@@ -86,7 +87,7 @@ call Highlight("Whitespace", s:dark_grey, s:none, s:none)
 
 call Highlight("TabLineSel", s:none, s:charcoal, s:bold)
 
-call Highlight("SignColumn", s:grey, s:darker_grey, s:none)
+call Highlight("SignColumn", s:none, s:none, s:none)
 call Highlight("NonText", s:darker_grey, s:none, s:none)
 call Highlight("TabLineFill", s:none, s:darker_grey, s:none)
 call Highlight("LineNr", s:darker_grey, s:none, s:none)
@@ -351,6 +352,7 @@ call Highlight("NERDTreeClosable", s:yellow, s:none, s:none)
 call Highlight("NERDTreeOpenable", s:yellow, s:none, s:none)
 call Highlight("NERDTreeDirSlash", s:light_blue, s:none, s:none)
 call Highlight("NERDTreeFile", s:none, s:none, s:none)
+call Highlight("NERDTreeFlags", s:light_blue, s:none, s:none)
 
 " Ruby
 call Highlight("rubyStringDelimiter", s:yellow, s:none, s:none)
@@ -377,7 +379,12 @@ call Highlight("VimwikiHeader4", s:light_green, s:none, s:bold)
 call Highlight("VimwikiHeader5", s:light_green, s:none, s:bold)
 call Highlight("VimwikiHeader6", s:light_green, s:none, s:bold)
 
+" GitGutter
+call Highlight("GitGutterAdd", s:light_green, s:none, s:none)
+call Highlight("GitGutterChange", s:light_blue, s:none, s:none)
+call Highlight("GitGutterDelete", s:magenta, s:none, s:none)
+call Highlight("GitGutterChangeDelete", s:orange, s:none, s:none)
+
 " Must be at the end, because of ctermbg=234 bug.
 " https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
 set background=dark
-
