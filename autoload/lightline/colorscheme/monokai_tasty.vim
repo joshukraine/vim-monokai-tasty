@@ -82,7 +82,7 @@ let s:palette.inactive.middle = [
 
 " tabs
 let s:palette.tabline.left = [ [ '#d0d0d0', '#666666', 252, 242 ] ]
-let s:palette.tabline.tabsel = [ [ '#dadada', '#121212', 253, 233 ] ]
+let s:palette.tabline.tabsel = [ [ '#303030', '#bcbcbc', 238, 250 ] ]
 let s:palette.tabline.middle = [ [ '#8a8a8a', '#3a3a3a', 245, 237 ] ]
 let s:palette.tabline.right = [ [ '#d0d0d0', '#666666', 252, 242 ] ]
 
